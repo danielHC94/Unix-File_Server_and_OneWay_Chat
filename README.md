@@ -4,9 +4,7 @@ A file server with Stream Socket and one-way chat from client to the server with
 To use the project, send an email to the code writer,
 Use is permitted for private use only.
 
-====================================================================================
 APIs list:
-====================================================================================
 1.	argc, argv (used at client see below)
 2.  null terminated strings - strcat(3), strstr(3), strchar(3) (used at server and client)
 3.	File API of C (fread, fwrite, fopen etc.) (used at server and client)
@@ -22,9 +20,9 @@ APIs list:
 13. fcntl (used at server -> file PID lock)
 14. math lib (-lm) (used at server -> enter the server with human question)
 15. time.h lib for log.txt file at the server (used at server -> create log with timestamp)
-====================================================================================
+
 Run: (the project in UNIX environment)
-====================================================================================
+
 ./server
  
  Enter 1 to enter the server
@@ -48,7 +46,7 @@ Run: (the project in UNIX environment)
    
    Enter lock time [seconds]
       
-====================================================================================
+
 ./client download testfile2 testfile3 testfile4
 
 ./client upload testfile2 testfile3 testfile4
@@ -59,9 +57,9 @@ Run: (the project in UNIX environment)
 
    exit (wait 2.5 and exit)
 
-====================================================================================
+
 compile:
-====================================================================================
+
 
 gcc -g client.c -o client
 
